@@ -3,8 +3,8 @@
 <header class="header header--loggedIn">
     <div class="container">
       <a href="{% url 'home' %}" class="header__logo">
-        <img src="{% static 'images/logo.svg' %}" />
-        <h1>Domain Expansion</h1>
+        <img src="https://webstockreview.net/images/mail-icon-png-10.png" />
+        <h1>Discussion</h1>
       </a>
       <form class="header__search" method="GET" action="{% url 'home' %}">
         <label>
@@ -25,8 +25,7 @@
         <div class="header__user">
           <a href="{% url 'user-profile' request.user.id %}">
             <div class="avatar avatar--medium active">
-              <img src="{{request.user.avatar.url}}" />
-              {{request.user.avatar.url}}
+              <img src="{{request.user.avatar.url}}"/>
             </div>
             <p>{{request.user.name}}<span>@{{request.user.username}}</span></p>
           </a>

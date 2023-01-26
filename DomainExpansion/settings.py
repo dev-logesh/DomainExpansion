@@ -25,15 +25,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = "djhgiurteiijdhvdjhgrieu"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'domain-expansion.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'domain-expansion.herokuapp.com' ,'https://dev-logesh-orange-giggle-44754xg9g66hpqv-8000.preview.app.github.dev/']
 
-
+CSRF_TRUSTED_ORIGINS=['https://dev-logesh-orange-giggle-44754xg9g66hpqv-8000.preview.app.github.dev']
 # Application definition
 
 INSTALLED_APPS = [
